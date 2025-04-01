@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://binorta3isq6r"]
+
+[ext_resource type="Script" uid="uid://dt1cxigvxlgdp" path="res://escenes/static_body_2d.gd" id="1_svgri"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qnfpq"]
+size = Vector2(120, 82.5)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_svgri")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -58.0
+offset_top = -41.0
+offset_right = 61.0
+offset_bottom = 41.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_qnfpq")

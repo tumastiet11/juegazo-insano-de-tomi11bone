@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://co8uxi587nqbr"]
+
+[ext_resource type="PackedScene" uid="uid://binorta3isq6r" path="res://escenes/static_body_2d.tscn" id="1_d4trm"]
+[ext_resource type="PackedScene" uid="uid://cdcjvm3s25mmx" path="res://escenes/tortuga.tscn" id="2_ushej"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-2, -2)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_ushej")]
+position = Vector2(660, 203)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_d4trm")]
+position = Vector2(886, 201)

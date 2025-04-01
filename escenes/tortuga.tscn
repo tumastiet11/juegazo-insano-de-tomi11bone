@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdcjvm3s25mmx"]
+
+[ext_resource type="Script" uid="uid://ba1wxa0uij8ps" path="res://caracterbodyscript.gd" id="1_rs2lc"]
+[ext_resource type="Texture2D" uid="uid://chsdog5fl0gs4" path="res://st_small_507x507-pad_600x600_f8f8f8-removebg-preview.png" id="1_vfcc1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qol5r"]
+size = Vector2(208, 139)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(272, 211)
+script = ExtResource("1_rs2lc")
+
+[node name="tortuga" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_vfcc1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 2.5)
+shape = SubResource("RectangleShape2D_qol5r")
