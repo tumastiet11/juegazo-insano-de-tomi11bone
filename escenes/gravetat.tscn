@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch1fb7qibpiqm"]
+
+[ext_resource type="Texture2D" uid="uid://chsdog5fl0gs4" path="res://st_small_507x507-pad_600x600_f8f8f8-removebg-preview.png" id="1_2mv7a"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="tortuga" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-234, -198)
+scale = Vector2(0.102, 0.102)
+texture = ExtResource("1_2mv7a")

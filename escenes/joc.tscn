@@ -1,13 +1,34 @@
-[gd_scene load_steps=3 format=3 uid="uid://co8uxi587nqbr"]
+[gd_scene load_steps=4 format=3 uid="uid://yvblbcu7u0t5"]
 
-[ext_resource type="PackedScene" uid="uid://binorta3isq6r" path="res://escenes/static_body_2d.tscn" id="1_d4trm"]
+[ext_resource type="PackedScene" uid="uid://dt3diu54qch68" path="res://escenes/mapa.tscn" id="2_d4trm"]
 [ext_resource type="PackedScene" uid="uid://cdcjvm3s25mmx" path="res://escenes/tortuga.tscn" id="2_ushej"]
+[ext_resource type="PackedScene" uid="uid://bvq8xjovnamv7" path="res://escenes/enciam.tscn" id="3_ushej"]
 
-[node name="Node2D" type="Node2D"]
+[node name="joc" type="Node2D"]
 position = Vector2(-2, -2)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_ushej")]
-position = Vector2(660, 203)
+[node name="MapaJoc" parent="." instance=ExtResource("2_d4trm")]
 
-[node name="StaticBody2D" parent="." instance=ExtResource("1_d4trm")]
-position = Vector2(886, 201)
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_ushej")]
+position = Vector2(301, 392)
+
+[node name="Label" type="Label" parent="CharacterBody2D"]
+offset_left = -286.0
+offset_top = -241.0
+offset_right = -246.0
+offset_bottom = -218.0
+
+[node name="Area2D" parent="." instance=ExtResource("3_ushej")]
+position = Vector2(579, -27)
+
+[node name="Area2D2" parent="." instance=ExtResource("3_ushej")]
+position = Vector2(-97, 230)
+
+[node name="Area2D3" parent="." instance=ExtResource("3_ushej")]
+position = Vector2(805, 167)
+
+[node name="Area2D4" parent="." instance=ExtResource("3_ushej")]
+position = Vector2(319, 360)
+
+[node name="Area2D5" parent="." instance=ExtResource("3_ushej")]
+position = Vector2(191, 45)
